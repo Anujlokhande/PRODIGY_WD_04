@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Anuj Lokhande | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <img src="profile.jpg" alt="Profile" />
+
+        <h2>Anuj Lokhande</h2>
+        <p>Full Stack Developer</p>
+
+        <a href="resume.pdf" download class="btn">Download Resume </a>
+
+        <!-- Hamburger (mobile only) -->
+        <div class="hamburger" onclick="toggleNav()">☰</div>
+
+        <!-- Navigation -->
+        <nav id="navMenu">
+          <a href="#about" onclick="closeNav()">About</a>
+          <a href="#skills" onclick="closeNav()">Skills</a>
+          <a href="#projects" onclick="closeNav()">Projects</a>
+          <a href="#achievements" onclick="closeNav()">Achievements</a>
+          <a href="#contact" onclick="closeNav()">Contact</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="content">
+        <section id="about" class="card">
+          <h3>About Me</h3>
+          <p>
+            I am a third-year Computer Science Engineering student with a strong
+            interest in exploring technologies and building meaningful digital
+            solutions.
+          </p>
+          <p>
+            I am an enthusiastic learner who enjoys learning new technologies
+            such as Machine Learning, Generative AI, and Artificial
+            Intelligence.
+          </p>
+          <p>
+            Along with academics, I focus on web development, project building,
+            and preparing myself for real-world software industry challenges.
+          </p>
+        </section>
+
+        <section id="skills" class="card">
+          <h3>Skills</h3>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+            <span>C++</span>
+            <span>Java</span>
+            <span>Git & GitHub</span>
+            <span>Machine Learning</span>
+            <span>Generative AI</span>
+          </div>
+        </section>
+
+        <section id="projects" class="card">
+          <h3>Projects</h3>
+          <div class="project">
+            <h4>Portfolio Website</h4>
+            <p>
+              Responsive personal portfolio using HTML, CSS, and JavaScript.
+            </p>
+          </div>
+          <div class="project">
+            <h4>Contact Management System</h4>
+            <p>Java-based system for managing student records efficiently.</p>
+          </div>
+        </section>
+
+        <section id="achievements" class="card">
+          <h3>Achievements</h3>
+          <div class="achievement">
+            <h4>Academic Consistency</h4>
+            <p>
+              Maintained strong academic performance while building projects.
+            </p>
+          </div>
+          <div class="achievement">
+            <h4>Technical Growth</h4>
+            <p>Improved skills through hands-on learning and self-practice.</p>
+          </div>
+        </section>
+
+        <section id="contact" class="card">
+          <h3>Contact</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+
+        <footer>© 2026 Anuj Lokhande</footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
